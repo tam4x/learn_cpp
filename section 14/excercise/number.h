@@ -4,22 +4,23 @@
 class number
 {
 private:
-
+    int num;
 public:
     number();
-    number(const char *s);
+    number(int numero);
     number(const number &source);
     number(number &&source);
     void display();
-    
-    number &operator=(const number &rhs); //copy a = b
-    number &operator=(number &&rhs); // move a = 5
 
-    
+    number operator+(const number &rhs) const;
+    number operator-() const; //copy a = b
+
+    bool operator!() const;
+    bool operator==(const number &rhs);
  
     ~number();
 
-};
+}; 
 
 
 #endif

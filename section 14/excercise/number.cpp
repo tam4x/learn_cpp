@@ -6,15 +6,16 @@ number::number(){
 };
 
 
-number::number(const char *s){
+number::number(int numero): num{numero}{
 
 }
 
-number::number(const number &source){
+number number::operator-() const{
 
 }
 
-number::number(number &&source){
+
+bool number::operator!() const{
 
 }
 

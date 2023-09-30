@@ -5,17 +5,10 @@
 
 
 int main(){
-    myString P{"Pier"};
-    myString d;
+    myString P{"PIER"};
     myString e{P};
-    P.display();
-    d.display();
-    e.display();
-    d = e;
-    d.display();
-    myString a;
-    a = "hi";
-    a.display();
-    
+    myString z;
+    std::cin >> z;
+    std::cout << z;
     return 0;
 }
